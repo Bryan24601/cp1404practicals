@@ -1,4 +1,6 @@
 import random
+
+
 def main():
     total_years_simulated = 10
     welcome = "Welcome to the Gopher Population Simulator!"
@@ -24,11 +26,13 @@ def population_growth(current_population):
     current_growth = current_growth_percentage * current_population
     return current_growth
 
+
 def population_decline(current_population):
     decline_lower_percentage = 5
     decline_higher_percentage = 25
     current_decline_percentage = random.randint(decline_lower_percentage, decline_higher_percentage + 1) / 100
     current_decline = current_decline_percentage * current_population
     return current_decline
+
 
 main()
