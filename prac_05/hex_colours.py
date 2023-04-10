@@ -11,4 +11,3 @@ while colour_name != "":
     else:
         print("Invalid colour name")
     colour_name = input("Enter Colour Name: ").upper()
-
